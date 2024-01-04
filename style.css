@@ -175,7 +175,7 @@ body {
 .hero-title .letter {
   display: inline-block;
   opacity: 0;
-  font-size: 85px;
+  font-size: 99px;
   color: #31b7ff;
   text-shadow: #b77a3c 4px 3px;
   font-family: "Times New Roman";
@@ -361,16 +361,25 @@ body {
     text-shadow: #b77a3c 2px 2px;
   }
   .view-photos a {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .about-section h1 {
+    font-size: 70px;
+  }
+  .about-section p {
+    font-size: 13px;
+  }
+  .project-section h1 {
+    font-size: 50px;
   }
   .social-media h1 {
-    font-size: 60px;
+    font-size: 58px;
   }
   .social-media h3 {
     font-size: 17px;
   }
   .social-media p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .social-icons ul li a {
     display: none;
