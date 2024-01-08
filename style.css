@@ -17,12 +17,12 @@ body {
   display: none;
 }
 
-/* HERO SECTION */
+/* main SECTION */
 .wrapper {
   min-width: 100%;
 }
 
-.hero-section {
+.main-section {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -30,7 +30,7 @@ body {
   background: #5a2922;
 }
 
-.hero-logo {
+.main-logo {
   position: fixed;
   margin: 2em;
   color: white;
@@ -38,7 +38,7 @@ body {
   z-index: 1;
 }
 
-.hero-logo img {
+.main-logo img {
   width: 10%;
   height: 10%;
 }
@@ -85,13 +85,6 @@ body {
   font-size: 84px;
 }
 
-@media (max-width: 900px) {
-  .overlay ul li {
-    font-size: 30px;
-    padding: 10px 0;
-  }
-}
-
 .overlay ul li a {
   color: transparent;
   -webkit-text-stroke: 1px #b5e4fe;
@@ -126,7 +119,7 @@ body {
 }
 
 /* LINK */
-.view-photos {
+.view-runway {
   position: absolute;
   left: 0;
   bottom: 1em;
@@ -134,18 +127,18 @@ body {
   z-index: 2;
 }
 
-.view-photos a {
+.view-runway a {
   color: #b5e4fe;
   text-decoration: underline;
   font-style: italic;
 }
 
-.view-photos a:hover {
+.view-runway a:hover {
   color: white;
 }
 
-/* HERO IMAGE - SECTION */
-.hero-img {
+/* MAIN IMAGE - SECTION */
+.main-img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -153,11 +146,11 @@ body {
   width: 400px;
 }
 
-.hero-img img {
+.main-img img {
   width: 100%;
 }
 
-.hero-title {
+.main-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -165,14 +158,14 @@ body {
   text-align: center;
 }
 
-.hero-title h1 {
+.main-title h1 {
   font-size: 80px;
   font-weight: lighter;
   text-transform: uppercase !important;
   color: white;
 }
 
-.hero-title .letter {
+.main-title .letter {
   display: inline-block;
   opacity: 0;
   font-size: 99px;
@@ -189,7 +182,7 @@ body {
 }
 
 .about-section h1 {
-  font-size: 84px;
+  font-size: 110px;
   font-family: "Times New Roman";
   text-transform: uppercase;
 }
@@ -303,19 +296,26 @@ body {
 
 /* MEDIA QUERIES */
 @media (max-width: 1440px) {
-  .hero-title .letter {
+  .main-title .letter {
     font-size: 87px;
   }
 }
 
 @media (max-width: 1024px) {
-  .hero-title .letter {
+  .main-title .letter {
     font-size: 35px;
   }
 }
 
+@media (max-width: 900px) {
+  .overlay ul li {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+}
+
 @media (max-width: 769px) {
-  .hero-title .letter {
+  .main-title .letter {
     font-size: 35px;
   }
 
@@ -349,34 +349,33 @@ body {
 }
 
 @media (max-width: 500px) {
-  .hero-img {
+  .main-img {
     width: 300px;
   }
 
-  .hero-title .letter {
+  .main-title .letter {
     font-size: 35.2px;
   }
 }
 
 @media (max-width: 376px) {
-  .hero-title .letter {
+  .main-title .letter {
     font-size: 32.1px;
   }
 }
 
-
 @media (max-width: 320px) {
-  .hero-img {
+  .main-img {
     width: 200px;
   }
 
-  .hero-title .letter {
+  .main-title .letter {
     font-size: 20px;
     color: #31b7ff;
     text-shadow: #b77a3c 2px 2px;
   }
 
-  .view-photos a {
+  .view-runway a {
     font-size: 12px;
   }
 

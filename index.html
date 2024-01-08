@@ -40,12 +40,12 @@
 </head>
 
 <body>
-  <!-- HERO SECTION -->
+  <!-- main SECTION -->
   <a name="home"></a>
   <div class="wrapper">
-    <section class="hero-section">
+    <section class="main-section">
       <!-- LOGO -->
-      <div class="hero-logo">
+      <div class="main-logo">
         <a href="#home">
           <img src="/Orb Logo.png" alt="Orb Logo">
         </a>
@@ -72,17 +72,17 @@
       </div>
 
       <!-- VIEW PHOTOS LINK -->
-      <div class="view-photos">
-        <a href="/runway/runways.html">view photos</a>
+      <div class="view-runway">
+        <a href="/runway/runways.html">view runway</a>
       </div>
 
-      <!-- HERO-IMAGE -->
-      <div class="hero-img">
-        <img src="/assets/hero_img.jpg" class="hero-img-parallax" />
+      <!-- main-IMAGE -->
+      <div class="main-img">
+        <img src="/assets/hero_img.jpg" class="main-img-parallax" />
       </div>
 
-      <!-- HERO-TITLE -->
-      <div class="hero-title">
+      <!-- main-TITLE -->
+      <div class="main-title">
         <h1>Vivienne Westwood</h1>
       </div>
       <div class="overlay">
@@ -233,14 +233,14 @@
     new WOW().init();
 
     // LETTER ANIMATION
-    var textWrapper = document.querySelector(".hero-title");
+    var textWrapper = document.querySelector(".main-title");
     textWrapper.innerHTML = textWrapper.textContent.replace(
       /\S/g,
       "<span class='letter'>$&</span>"
     );
     $(document).ready(function () {
       anime.timeline({ loop: false }).add({
-        targets: ".hero-title .letter",
+        targets: ".main-title .letter",
         translateY: [120, 0],
         translateZ: 0,
         opacity: [0, 1],
@@ -253,7 +253,7 @@
     var t1 = new TimelineMax({ paused: true });
 
     // COMPANY LOGO
-    TweenMax.from(".hero-logo", 2, {
+    TweenMax.from(".main-logo", 2, {
       y: 20,
       opacity: 0,
       ease: Expo.easeInOut,
@@ -269,7 +269,7 @@
     });
 
     // LINK 
-    TweenMax.from(".view-photos", 2, {
+    TweenMax.from(".view-runway", 2, {
       y: 20,
       opacity: 0,
       ease: Expo.easeInOut,
@@ -297,7 +297,7 @@
 
 
     // LINK AND SOCIAL MEDIA LOGOS
-    t1.to(".view-photos, .media", 1, {
+    t1.to(".view-runway, .media", 1, {
       opacity: 0,
       ease: Expo.easeInOut
     });
@@ -327,7 +327,7 @@
     });
 
     // IMAGE SCALING WITH EFFECTS
-    var image = document.getElementsByClassName("hero-img-parallax");
+    var image = document.getElementsByClassName("main-img-parallax");
     new simpleParallax(image, {
       scale: 1.3
     });
