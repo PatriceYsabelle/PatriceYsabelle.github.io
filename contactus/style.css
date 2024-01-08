@@ -122,7 +122,7 @@ body {
   width: 100%;
   height: 60vh;
 }
-.container-2 .inputboxes {
+.container-2 .inputbox {
   width: 75%;
   height: 100%;
   display: flex;
@@ -130,7 +130,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.inputboxes .row1 {
+.inputbox .row1 {
   height: 20%;
   display: flex;
   align-items: center;
@@ -151,7 +151,7 @@ body {
   outline: none;
   border: 2px solid transparent;
 }
-.inputboxes .row2 {
+.inputbox .row2 {
   /* height: calc(80% - 20px); */
   height: 80%;
   width: calc(100% - 20px);
@@ -192,7 +192,7 @@ body {
   width: 90%;
 }
 
-.container-2 .submitbtn {
+.container-2 .submit-button {
   width: 25%;
 
   background-color: #f0f0f0;
@@ -204,7 +204,7 @@ body {
   color: #1d1c16;
   flex-direction: column;
 }
-.submitbtn ion-icon {
+.submit-button ion-icon {
   width: 50px;
   height: 30px;
   margin: 10px 0px;
@@ -272,13 +272,13 @@ input:focus {
   .container-2 {
     flex-direction: column;
   }
-  .container-2 .inputboxes {
+  .container-2 .inputbox {
     width: 100%;
   }
   .contact-form {
     display: none;
   }
-  .container-2 .submitbtn {
+  .container-2 .submit-button {
     width: 95%;
     padding: 0px 10px;
     margin-top: 10px;
@@ -296,7 +296,7 @@ input:focus {
   .container-1 .content {
     padding: 0px 30px;
   }
-  .container-2 .inputboxes input {
+  .container-2 .inputbox input {
     padding: 0px 20px;
   }
   .container-1 .social-links {

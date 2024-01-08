@@ -85,7 +85,7 @@ body {
 }
 
 /* RUNWAY/PROJECT SECTION */
-.projects-contain {
+.projects-container {
     position: absolute;
     display: flex;
     top: 20%;
@@ -96,14 +96,14 @@ body {
     flex-direction: column;
 }
 
-.contain {
+.container {
     position: relative;
     width: 560px;
     height: 100vh;
     margin: 50px 400px 120px 80px;
 }
 
-.contain .c-title {
+.container .c-title {
     position: absolute;
     left: 40px;
     bottom: -40px;
@@ -113,14 +113,14 @@ body {
     font-size: 50px;
 }
 
-.contain .c-title a {
+.container .c-title a {
     transition: 1.6s;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.contain:hover .c-title a {
+.container:hover .c-title a {
     transition: 1.6s;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px white;
@@ -184,26 +184,26 @@ body {
     transition: .6s;
 }
 
-.contain:hover .hover ion-icon {
+.container:hover .hover ion-icon {
     opacity: 1;
     z-index: 100;
     transition: .6s;
 }
 
-.contain:hover .hover {
+.container:hover .hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* MEDIA QUERIES */
 @media(max-width: 1150px) {
-    .contain,
+    .container,
     .project-h1 {
         margin: 50px 230px 90px 95px;
     }
 }
 
 @media(max-width: 900px) {
-    .contain,
+    .container,
     .project-h1 {
         width: 300px;
         height: 450px;
@@ -215,7 +215,7 @@ body {
 		padding: 10px 0;
 	}
 
-    .contain .c-title {
+    .container .c-title {
         font-size: 25px;
         bottom: -20px;
     }
@@ -235,14 +235,14 @@ body {
 }
 
 @media(max-width: 320px) {
-    .contain,
+    .container,
     .project-h1 {
         width: 220px;
         height: 450px;
         margin: 50px 100px 70px 80px;
     }
 
-    .contain .c-title {
+    .container .c-title {
         font-size: 25px;
         bottom: -20px;
     }
